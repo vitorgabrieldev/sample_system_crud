@@ -1,2 +1,152 @@
 
-/*====================*/
+/*========Geral=======*/
+body, html
+{
+    background: #21242d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/*Container 3 cards*/
+.container_options
+{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    width: 95%;
+    height: 80%;
+}
+
+/*Cards*/
+.container_box
+{
+    background: #fefefe;
+    margin: .5rem 1.5rem .5rem 1.5rem;
+}
+
+/*Card option skip*/
+.box_skip .details
+{
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 2rem
+}
+
+.box_skip
+{
+    box-shadow: 12px 12px 20px #000;
+}
+    
+
+.box_skip header i
+{
+    font-size: 3rem;
+}
+
+
+/*Text cards*/
+.text_container
+{
+    text-align: center;
+    padding: 0 3rem 0 3rem;
+}
+
+.msg_card
+{
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+/*btn global*/
+.btn_options
+{
+    width: 60%;
+    background: #fcab1a;
+    border: none;
+    border-radius: 2rem;
+    padding: .5rem 1.5rem .5rem 1.5rem;
+    color: #fefefe;
+    font-weight: 900;
+    letter-spacing: .1rem;
+    font-size: 2rem;
+    transition: .3s;
+}
+
+/*btn skip*/
+.container_btn
+{
+    text-align: center;
+    padding: 3rem 0 0 0;
+}
+
+.btn_options 
+{
+    transform: translateY(-5px) scale(.9);
+}
+
+.container_login,
+.container_new_account
+{
+    background: #424856;
+    box-shadow: 12px 12px 20px rgb(0, 0, 0);
+}
+/*================================================*/
+/*container login*/
+.form
+{
+    padding: 2rem;
+}
+
+.text-light
+{
+    font-size: 5rem !important;
+    color: #fefefeb1;
+    font-weight: 900;
+}
+
+.container_input
+{
+    margin: .5rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container_input i
+{
+    color: #fefefeb3;
+    font-size: 2.3rem;
+    margin-top: .5rem;
+}
+.container_input .input_values
+{
+    outline: none;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fefefe;
+    border-bottom: .01rem solid #fefefebf;
+    padding: .5rem 0 .5rem 2rem;
+}
+
+.container_buttons
+{
+    margin-top: 4.5rem;
+    text-align: center;
+}
+
+.btnDark
+{
+    background: #232330;
+}
+
+.link_min
+{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #feefefe;
+}
