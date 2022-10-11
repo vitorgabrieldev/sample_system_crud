@@ -15,7 +15,7 @@ body, html
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
+    justify-content: center;
     width: 95%;
     height: 80%;
 }
@@ -25,6 +25,7 @@ body, html
 {
     background: #fefefe;
     margin: .5rem 1.5rem .5rem 1.5rem;
+    transform: scale(.9);
 }
 
 /*Card option skip*/
@@ -46,6 +47,7 @@ body, html
 .box_skip header i
 {
     font-size: 3rem;
+    padding: .5rem;
 }
 
 
@@ -70,7 +72,7 @@ body, html
     border: none;
     border-radius: 2rem;
     padding: .5rem 1.5rem .5rem 1.5rem;
-    color: #fefefe;
+    color: #fefefecb;
     font-weight: 900;
     letter-spacing: .1rem;
     font-size: 2rem;
@@ -87,6 +89,13 @@ body, html
 .btn_options 
 {
     transform: translateY(-5px) scale(.9);
+    color: #fefefe;
+    transition: .3s;
+}
+
+.btn_options:hover
+{
+    transform: scale(.9) translateY(-15px);
 }
 
 .container_login,
@@ -95,58 +104,21 @@ body, html
     background: #424856;
     box-shadow: 12px 12px 20px rgb(0, 0, 0);
 }
-/*================================================*/
-/*container login*/
-.form
-{
-    padding: 2rem;
-}
 
-.text-light
-{
-    font-size: 5rem !important;
-    color: #fefefeb1;
-    font-weight: 900;
-}
 
-.container_input
+/*=== event_hoverIcons ===*/
+.event_hover:hover
 {
-    margin: .5rem;
-    padding: .5rem;
-    display: flex;
-    justify-content: space-evenly;
-}
-.container_input i
-{
-    color: #fefefeb3;
-    font-size: 2.3rem;
-    margin-top: .5rem;
-}
-.container_input .input_values
-{
-    outline: none;
-    background: transparent;
-    border: none;
-    font-size: 2rem;
+    cursor: pointer;
+    transform: scale(.9);
+    background: rgb(70, 68, 68);
     color: #fefefe;
-    border-bottom: .01rem solid #fefefebf;
-    padding: .5rem 0 .5rem 2rem;
+    transition: .3s;
+    border-radius: 1.7rem;
 }
 
-.container_buttons
+.event_hoverIcons:active
 {
-    margin-top: 4.5rem;
-    text-align: center;
-}
-
-.btnDark
-{
-    background: #232330;
-}
-
-.link_min
-{
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #feefefe;
+    transform: translateX(15px);
+    transition: .1s;
 }
