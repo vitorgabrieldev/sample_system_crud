@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
 
-  <title>Temporario</title>
+  <title>Create account</title>
 
   <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/album/">
 
@@ -32,19 +32,22 @@
 <body>
 
     <!-- Components -->
-    <main class="container_options">
-      <section class="container_box box_skip">
-        <header class="details">
-          <i class="bi bi-three-dots event_hover"></i>
-        </header>
-        <article class="text_container">
-          <h1 class="msg_card">Start your adventure</h1>
-        </article>
-        <article class="container_btn">
-          <button type="button" class="btn_options BTN_skip">Next</button>
-        </article>
-      </section>
-    </main>
+    <!-- Code by: João Victor -->
+    <div class="container">
+      <div class="header">
+        <h2>Create new account</h2>
+      </div>
+      <form method="post" action="../../../back_end/public/validation_new_account.php" class="form" id="form">
+              <label for="username">Username</label>
+              <input class="form-control" name="username" type="text" id="username" placeholder="Username">
+              <label for="password">Password</label>
+              <input class="form-control" name="password" type="password" id="password" placeholder="Password">
+              <button type="submit">Conectar</button>
+      </form>
+  </div>
+
+    <!-- === Scripts Sheets === -->
+    <script src="./script.js"></script>
 
 </body>
 </html>

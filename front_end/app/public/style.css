@@ -1,124 +1,90 @@
 
 /*========Geral=======*/
-body, html
-{
-    background: #21242d;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #212122;
     display: flex;
+    font-family: Poppins;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+
+    border: 0;
 }
 
-/*Container 3 cards*/
-.container_options
-{
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    width: 95%;
-    height: 80%;
+.container {
+    background-color: #212224;
+    border-radius: 5px;
+    border: 2px solid #202125;
+    width: 500px;
+    max-width: 100%;
 }
 
-/*Cards*/
-.container_box
-{
-    background: #fefefe;
-    margin: .5rem 1.5rem .5rem 1.5rem;
-    transform: scale(.9);
+.header {
+    padding: 30px 40px;
+    background-color: #292626;
+    width: 500px;
 }
 
-/*Card option skip*/
-.box_skip .details
-{
-    height: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding-left: 2rem
+.header h2 {
+    font-weight: 600;
+    color: #bdc4d5;
+    font-size: 30px;
 }
 
-.box_skip
-{
-    box-shadow: 12px 12px 20px #000;
-}
-    
-
-.box_skip header i
-{
-    font-size: 3rem;
-    padding: .5rem;
+.form {
+    padding: 0 40px 30px;
+    background-color: #292626;
+    width: 500px;
 }
 
-
-/*Text cards*/
-.text_container
-{
-    text-align: center;
-    padding: 0 3rem 0 3rem;
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    background: transparent;
 }
 
-.msg_card
-{
-    font-weight: 900;
-    font-size: 4rem;
-}
-
-/*btn global*/
-.btn_options
-{
-    width: 60%;
-    background: #fcab1a;
-    border: none;
-    border-radius: 2rem;
-    padding: .5rem 1.5rem .5rem 1.5rem;
-    color: #fefefecb;
-    font-weight: 900;
-    letter-spacing: .1rem;
-    font-size: 2rem;
-    transition: .3s;
-}
-
-/*btn skip*/
-.container_btn
-{
-    text-align: center;
-    padding: 3rem 0 0 0;
-}
-
-.btn_options 
-{
-    transform: translateY(-5px) scale(.9);
+label {
+    display: inline-block;
+    margin-bottom: 5px;
     color: #fefefe;
-    transition: .3s;
 }
 
-.btn_options:hover
-{
-    transform: scale(.9) translateY(-15px);
+.form-control{
+    border: 2px solid #3E445B;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    outline: none !important;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
+    color: #242424;    
 }
 
-.container_login,
-.container_new_account
-{
-    background: #424856;
-    box-shadow: 12px 12px 20px rgb(0, 0, 0);
-}
+.form button {
+    background-color: #6C63FF;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
 
+    margin-top: 5px;
 
-/*=== event_hoverIcons ===*/
-.event_hover:hover
-{
     cursor: pointer;
-    transform: scale(.9);
-    background: rgb(70, 68, 68);
-    color: #fefefe;
-    transition: .3s;
-    border-radius: 1.7rem;
 }
 
-.event_hoverIcons:active
-{
-    transform: translateX(15px);
-    transition: .1s;
+.form button:hover {
+    background-color: #584ff5;
+    transition: 0.3s;
 }
